@@ -5,10 +5,6 @@ import (
   "crypto/sha256"
 )
 
-type PasswordHasher interface {
-  Hash(password string) (string, error)
-}
-
 type SHA256Hasher struct {
   salt string
 }
