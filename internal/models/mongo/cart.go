@@ -3,6 +3,6 @@ package models
 import "go.mongodb.org/mongo-driver/bson/primitive"
 
 type Cart struct {
-  ID primitive.ObjectID `json:"id" bson:"_id"`
-  Orders []OrderInfo `json:"orders" bson:"orders"`
+	ID     primitive.ObjectID `json:"id" bson:"_id"`
+	Orders []OrderInfo        `json:"orders" bson:"orders"`
 }

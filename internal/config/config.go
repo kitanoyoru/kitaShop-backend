@@ -1,28 +1,28 @@
 package config
 
 import (
-  "os"
-  "time"
+	"os"
+	"time"
 )
 
 type Config struct {
-  Env string
-  Mongo MongoConfig
-  HTTP HTTPConfig
+	Env   string
+	Mongo MongoConfig
+	HTTP  HTTPConfig
 }
 
 type MongoConfig struct {
-  URI string
-  User string
-  password string
-  DatabaseName string
+	URI          string
+	User         string
+	password     string
+	DatabaseName string
 }
 
 type HTTPConfig struct {
-  Host string
-  Port string
-  ReadTimeout time.Duration
-  WriteTimeout time.Duration
+	Host         string
+	Port         string
+	ReadTimeout  time.Duration
+	WriteTimeout time.Duration
 }
 
-// TODO: Implement unmarshal config from yml 
+// TODO: Implement unmarshal config from yml

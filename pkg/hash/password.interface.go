@@ -1,5 +1,5 @@
 package hash
 
 type PasswordHasher interface {
-  Hash(password string) (string, error)
+	Hash(password string) (string, error)
 }

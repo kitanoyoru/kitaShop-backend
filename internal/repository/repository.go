@@ -1,7 +1,5 @@
 package repository
 
 const (
-  promocodeCollectionName = "promocodes"
+	promocodeCollectionName = "promocodes"
 )
-
-
